@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed-Then-Scroll Button</title>
+  <style>
+    /* Simulate a long page */
+    .content {
+      height: 2000px;
+      padding: 20px;
+    }
+
+    /* Button style */
+    .scroll-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #e50914;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    /* Class to hide the button */
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Scroll down the page</h1>
+    <p>Some content here...</p>
+    <button id="scrollButton" class="scroll-button">Scroll Button</button>
+    <p>More content below...</p>
+  </div>
+
+  <script>
+    const button = document.getElementById('scrollButton');
+    const hideAtScrollY = 1000; // Set this to the scroll position you want
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= hideAtScrollY) {
+        button.classList.add('hidden'); // Hide the button
+      } else {
+        button.classList.remove('hidden'); // Show the button
+      }
+    });
+  </script>
+
+</body>
+</html>
