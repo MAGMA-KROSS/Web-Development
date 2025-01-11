@@ -28,7 +28,7 @@ I am Abi, a passionate first-year BTech student exploring the exciting world of 
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/MAGMA-KROSS/Web-Development.git)
+   git clone https://github.com/MAGMA-KROSS/Web-Development.git
    ```
 2. Navigate to the project folder you're interested in.
 3. Open the `index.html` file in your browser to view the project.
