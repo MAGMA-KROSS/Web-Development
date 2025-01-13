@@ -114,7 +114,7 @@ export default function TextForm(props) {
     <div className="mb-3">
       <label htmlFor="exampleFormControlTextarea1" className="form-label fs-5">{props.text}</label>
       <textarea
-        className="form-control"
+        className={`form-control ${props.style}`}
         style={{
           fontWeight: isBold ? "bold" : "normal",
           fontFamily: isLobster
