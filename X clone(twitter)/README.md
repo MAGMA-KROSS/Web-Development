@@ -9,8 +9,8 @@ A sleek and interactive clone of "X," built with **HTML**, **Tailwind CSS**, and
 - **Interactive Elements:** Functional components implemented using **JavaScript**.  
 
 ## Screenshots  
-![Screenshot 1](Screenshot%202025-01-18%20135508.png)   
-![Screenshot 2](Screenshot%2025-01-18%135632.png)  
+![Screenshot 1](screenshot1.png)   
+![Screenshot 2](screenshot2.png)  
 
 ## Installation  
 1. Clone the repository:  
