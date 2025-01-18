@@ -18,6 +18,7 @@ TextUtils is a React-based web application that allows users to perform various 
 - React
 - HTML
 - CSS
+- Bootstrap
 
 ## Installation
 
