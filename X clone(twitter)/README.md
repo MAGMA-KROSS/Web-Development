@@ -8,9 +8,6 @@ A sleek and interactive clone of "X," built with **HTML**, **Tailwind CSS**, and
 - **Modern Design:** Styled with **Tailwind CSS** for a polished and consistent appearance.  
 - **Interactive Elements:** Functional components implemented using **JavaScript**.  
 
-## Demo  
-[Live Demo](https://your-live-demo-link.com) (Replace with your live link)
-
 ## Screenshots  
 ![Screenshot 1](path/to/screenshot1.png)  
 ![Screenshot 2](path/to/screenshot2.png)  
@@ -23,8 +20,11 @@ A sleek and interactive clone of "X," built with **HTML**, **Tailwind CSS**, and
 2. Navigate to the project directory:  
    ```bash
    cd x-clone
-   ```  
-3. Open `index.html` in your browser to view the project.  
+   ```
+3. Install the Tailwind CSS framework on your system to inspect the project without any problems.  
+   Follow the [official Tailwind CSS installation guide](https://tailwindcss.com/docs/installation) for your setup.
+   
+5. Open `index.html` in your browser to view the project.  
 
 ## Technologies Used  
 - **HTML5**  
@@ -34,7 +34,5 @@ A sleek and interactive clone of "X," built with **HTML**, **Tailwind CSS**, and
 ## Contributing  
 Contributions are welcome! Please fork this repository and submit a pull request for any improvements or new features.
 
-## License  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
