@@ -45,4 +45,5 @@ TextUtils is a React-based web application that allows users to perform various 
     - **Uppercase**: Converts the text to uppercase.
     - **Lowercase**: Converts the text to lowercase.
     - **Remove Extra Spaces**: Removes unnecessary spaces from the text.
+    - **Change font**: Change font of the text
 3. The modified text will appear immediately in the output area.
