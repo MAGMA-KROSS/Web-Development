@@ -25,7 +25,7 @@ This project is a simple Netflix clone made using HTML and CSS. It is a static w
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/MAGMA-KROSS/Web-Development.git
 2. Navigate into the project directory:
    ```bash
    cd NETFLIX CLONE
