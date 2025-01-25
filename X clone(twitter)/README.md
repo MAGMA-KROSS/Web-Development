@@ -15,7 +15,7 @@ A sleek and interactive clone of "X," built with **HTML**, **Tailwind CSS**, and
 ## Installation  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/x-clone.git
+   git clone https://github.com/MAGMA-KROSS/Web-Development
    ```  
 2. Navigate to the project directory:  
    ```bash
