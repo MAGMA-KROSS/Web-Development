@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency convertor</title>
+</head>
+
+<body>
+    <!-- Background Particles -->
+    <div  id="particles-js"></div>  
+
+
+        <div class="container">
+            <form action="">
+                <h1>Currency Convertor</h1>
+                <p>Enter the amount</p>
+                <input type="number" value="100" id="amt">
+                <div class="currency">
+                    <div class="from">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select name="" id="from"></select>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10H7l4-4M3 14h14l-4 4" />
+                    </svg>
+                    <div class="to">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                        <select name="" id="to"></select>
+                    </div>
+                </div>
+                <p class="CurrRate"></p>
+                <button class="btn">Exchange Rate</button>
+            </form>
+        </div>
+
+
+    <script src="particles.js"></script> <!-- Load first -->
+    <script src="codes.js"></script>
+    <script src="index.js"></script>
+    <script src="app.js"></script> <!-- Load last -->
+</body>
+
+
+</html>
