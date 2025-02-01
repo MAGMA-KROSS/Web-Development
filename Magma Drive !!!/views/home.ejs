@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magma Drive - Secure Cloud Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-orange-500">Magma Drive</div>
+            <!-- Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- Main Section -->
+
+    <main class="w-[80vw] -translate-x-1/2 my-[24px] left-1/2 relative ">
+        <h1 class="text-center text-4xl mb-[24px] font-monospace font-bold">Store Your Data 🚀</h1>
+        <div class="flex items-center justify-center w-full">
+
+
+
+            <div class="flex items-center flex-col justify-center w-full">
+                <label for="dropzone-file"
+                    class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to
+                                upload</span> or drag and drop</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+                <button type="button" onclick="uploadFile()"
+                    class="text-white my-[12px] bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Upload</button>
+            </div>
+
+
+        </div>
+        <h1 class="text-3xl font-bold text-center mb-8">File List and Download from Supabase</h1>
+
+        <div id="fileList" class=" ">
+            <!-- File list and download buttons will be rendered here -->
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md mx-auto my-[16px]">
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-center  mb-4">
+                Store Your Data Online for Free
+            </h2>
+            <div class="flex justify-between mt-[24px]">
+                <!-- Description -->
+                <p class=" mb-6 w-[50%]">
+                    Our Product is a free online storage service that allows you to store your files online without
+                    having to install any software. Our service is free, easy to use, and secure. You can store your
+                    files online and access them from any device with an internet connection.
+                </p>
+
+                <!-- Features List -->
+                <ul class="space-y-3 w-[40%]">
+                    <li class="flex items-center">
+                        <span class=" mr-2">✔</span>
+                        Store on Mac, Windows, Linux, iOS, and Android
+                    </li>
+                    <li class="flex items-center">
+                        <span class=" mr-2">✔</span>
+                        Store your files online and access them from any device
+                    </li>
+                    <li class="flex items-center">
+                        <span class=" mr-2">✔</span>
+                        Free online storage service
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <section class="bg-gray-800 py-16 my-[16px]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose Magma Drive?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h3 class="text-xl font-bold mb-2">Blazing Fast Speeds</h3>
+                        <p class="text-gray-400">Upload and access your files in seconds with our high-speed
+                            servers.
+                        </p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-bold mb-2">Military-Grade Security</h3>
+                        <p class="text-gray-400">Your data is encrypted and protected with the latest security
+                            protocols.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">💾</div>
+                        <h3 class="text-xl font-bold mb-2">Unlimited Storage</h3>
+                        <p class="text-gray-400">Store as much as you need with our flexible storage plans.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-8 ">
+        <div class="container mx-auto text-center px-6">
+            <p class="text-gray-400">&copy; 2023 Magma Drive. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+
+        const { createClient } = supabase;
+
+        const supabaseUrl = ''; // Replace with your Supabase URL
+        const supabaseKey = ''; // Replace with your anon key // Replace with your anon key
+        const supabaseClient = createClient(supabaseUrl, supabaseKey);
+
+        console.log('Supabase initialized:', supabaseClient); // Debugging: Check if Supabase is initialized
+
+        // Function to upload file
+        async function uploadFile() {
+            const fileInput = document.getElementById('dropzone-file');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert('Please select a file to upload.');
+                return;
+            }
+
+            console.log('File selected:', file.name);
+
+            const { data, error } = await supabaseClient
+                .storage
+                .from('Magma-Drive') // Replace with your bucket name
+                .upload(`uploads/${file.name}`, file);
+
+            if (error) {
+                console.error('Error uploading file:', error);
+                alert('Upload failed. Check console for details.');
+            } else {
+                console.log('File uploaded successfully:', data);
+                alert('File uploaded successfully!');
+            }
+
+        }
+
+        async function fetchFiles() {
+            const { data, error } = await supabaseClient
+                .storage
+                .from('Magma-Drive') // Replace with your bucket name
+                .list('uploads'); // Folder name (if you have any subfolder)
+
+            if (error) {
+                console.error('Error fetching files:', error);
+            } else {
+                // Filter out the .emptyFolderPlaceholder file
+                const filteredFiles = data.filter(file => file.name !== '.emptyFolderPlaceholder');
+                renderFileList(filteredFiles); // Render the filtered list
+            }
+        }
+
+        // Function to render the file list and provide download buttons
+        function renderFileList(files) {
+            const fileListDiv = document.getElementById('fileList');
+            fileListDiv.innerHTML = ''; // Clear previous list
+
+            files.forEach(async (file) => {
+                // Fetch the file's public URL
+                const { data, error } = await supabaseClient
+                    .storage
+                    .from('Magma-Drive') // Replace with your bucket name
+                    .createSignedUrl(`uploads/${file.name}`, 60); // Generate a signed URL (valid for 60 seconds)
+
+                if (error) {
+                    console.error('Error fetching public URL:', error);
+                    return;
+                }
+
+                // Create a card for each file
+                const fileCard = document.createElement('div');
+                fileCard.className = 'bg-gray-600 my-[12px] rounded-lg shadow-md p-6 flex justify-between hover:shadow-lg transition-shadow';
+
+                // File name
+                const fileName = document.createElement('div');
+                fileName.className = 'text-lg font-semibold mb-4 truncate';
+                fileName.textContent = file.name;
+
+                // Download button
+                const downloadBtn = document.createElement('button');
+                downloadBtn.className = ' bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors';
+                downloadBtn.textContent = 'Download';
+                downloadBtn.onclick = () => {
+                    window.location.href = data.signedUrl; // Trigger file download
+                };
+
+                // Append elements to the card
+                fileCard.appendChild(fileName);
+                fileCard.appendChild(downloadBtn);
+
+                // Append the card to the file list
+                fileListDiv.appendChild(fileCard);
+            });
+        }
+
+        // Fetch and render the file list on page load
+        fetchFiles();
+
+
+    </script>
+</body>
+
+</html>
