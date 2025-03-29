@@ -1,6 +1,6 @@
 # Netflix Clone
 
-This project is a simple Netflix clone made using HTML and CSS. It is a static website that mimics the layout and design of the Netflix homepage.[Visit My Website](https://example.com](https://web-development-ausj.vercel.app/)
+This project is a simple Netflix clone made using HTML and CSS. It is a static website that mimics the layout and design of the Netflix homepage.[Visit My Website](https://web-development-ausj.vercel.app/)
 
 
 ## Features
